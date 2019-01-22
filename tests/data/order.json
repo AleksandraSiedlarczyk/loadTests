@@ -1,0 +1,27 @@
+{
+    "status":"DRAFT",
+    "items":[
+        {
+            "id":0,
+            "isEditing":false,
+            "product":
+            {
+                "id":"5c475d2307a35e42f8abc469",
+                "name":"Testowy produkt 1",
+                "price": 100
+            },
+            "quantity":2
+        },
+        {
+            "id":1,
+            "isEditing":false,
+            "product":
+            {
+                "id":"5c475d2307a35e42f8abc46a",
+                "name":"Testowy produkt 2",
+                "price": 200
+            },
+            "quantity":1
+        }
+    ]
+}
