@@ -1,11 +1,21 @@
 ## Performance tests with k6
 
-In order to build infrastructure on AWS:
+The following tools need to be installed:
+- k6
+- grafana
 
-1. Run the following commands:
+## Making orders
+
+In order to run performance tests for making orders run the following command:
 
 ```
-docker run -i -v //c/k6:/k6 loadimpact/k6 run --vus 1 --duration 1s /k6/tests/order.js
+k6 run --vus 1000 --duration 5s /tests/endpoints/order.js
 ```
 
+## Accepting orders
 
+In order to run performance tests for accepting orders made in the previous step run the following command:
+
+```
+k6 run /tests/endpoints/accept.js
+```
