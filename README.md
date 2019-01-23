@@ -26,7 +26,7 @@ k6 run /tests/endpoints/accept.js
 Metrics shown on the Grafana graphs:
 - average iteration_duration [ms] 
 
-![GrafanaTC1](/blob/master/tests/results/GrafanaTC1.png)
+![GrafanaTC1](/tests/results/GrafanaTC1.png)
 
 Metrics shown on the Excel graphs:
 - http_req_blocked (avg & max) [ms]
