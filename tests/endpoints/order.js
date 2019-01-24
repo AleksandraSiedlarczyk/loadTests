@@ -1,4 +1,3 @@
-import { check } from "k6";
 import http from "k6/http";
 import { baseURL, password } from "../utils/common.js";
 import { getLoginCookie } from "./login.js";
@@ -10,5 +9,5 @@ export default function() {
   let cookie = getLoginCookie(username, password);  
   let url = baseURL + "/api/orders/";
   let params =  { headers: { "Content-Type" : "application/json", "Cookie" : "JSESSIONID="+cookie+"" } };
-  let response = http.post(url, payload, params);
+  http.post(url, payload, params);
 }
